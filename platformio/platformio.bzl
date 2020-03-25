@@ -354,7 +354,7 @@ platformio_project = rule(
         allow_single_file=True,
       ),
       "src": attr.label(
-        allow_single_file=[".cc"],
+          allow_single_file=[".c",".cc",".cpp",],
         mandatory=True,
         doc = """
 A string, the name of the C++ source file, the main file for 
